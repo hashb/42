@@ -1,0 +1,1 @@
+ldapsearch -Q -LL "(uid=z*)" -W cn | grep "cn: " | cut -c 5- | sort --ignore-case --reverse
