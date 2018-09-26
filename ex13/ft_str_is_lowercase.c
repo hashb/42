@@ -6,7 +6,20 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:46 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:05:29 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 23:05:00 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int		ft_str_is_lowercase(char *str)
+{
+	if (*str == '\0')
+		return (1);
+	while (*str != '\0')
+	{
+		if (*str >= 'a' && *str <= 'z')
+			str++;
+		else
+			return (0);
+	}
+	return (1);
+}
