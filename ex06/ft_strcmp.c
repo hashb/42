@@ -6,7 +6,23 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:14 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:04:15 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 20:04:17 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int		ft_strcmp(char *s1, char *s2)
+{
+	while (*s1 != '\0' || *s2 != '\0')
+	{
+		if (*s1 == *s2)
+		{
+			s1++;
+			s2++;
+		}
+		else if (*s1 > *s2)
+			return (1);
+		else
+			return (-1);
+	}
+	return (0);
+}
