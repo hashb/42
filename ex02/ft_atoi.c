@@ -6,13 +6,37 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 19:36:02 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 14:26:24 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 17:57:29 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_atoi(char *str)
+char	*counter(char *str)
 {
-	int b;
+	while (*str == ' ' || *str == '\t' || *str == '\n'
+			|| *str == '\v' || *str == '\r' || *str == '\f')
+		str++;
+	return (str);
+}
 
-	b = 0;
+int		ft_atoi(char *str)
+{
+	int ans;
+	int sign;
+
+	ans = 0;
+	sign = 1;
+	if (*str == '+')
+		str++;
+	else if (*str == '-')
+	{
+		sign = -1;
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+	{
+		ans *= 10;
+		ans += *str - '0';
+		str++;
+	}
+	return (ans * sign);
 }

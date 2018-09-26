@@ -6,9 +6,11 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 16:31:26 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/24 19:56:13 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 15:21:32 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
