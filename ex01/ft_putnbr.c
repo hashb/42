@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 16:45:43 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:02:00 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 20:29:13 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@ void	ft_putchar(char c);
 
 void	ft_putnbr(int nb)
 {
-	if (nb == -__INT_MAX__)
+	if (nb == -__INT_MAX__ || nb == __INT_MAX__)
 	{
-		ft_putchar('-');
+		if (nb < 0)
+			ft_putchar('-');
 		ft_putchar('2');
 		ft_putnbr(147483647);
 		return ;
