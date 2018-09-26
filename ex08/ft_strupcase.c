@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:28 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 20:30:16 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 20:40:41 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ char	*ft_strupcase(char *str)
 	while (*str != '\0')
 	{
 		if (*str >= 'a' && *str <= 'z')
-			*str -= 32;
+			*str -= 31;
 		str++;
 	}
 	return (str);

@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:20 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 20:09:33 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 20:41:13 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int		ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned int i;
 
 	i = 0;
-	while (*s1 != '\0' || *s2 != '\0' || i < n)
+	while (*s1 != '\0' && *s2 != '\0' && i < n)
 	{
 		if (*s1 == *s2)
 		{
