@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:07 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 19:55:33 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 21:52:48 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int		ft_strstr_helper(char *pos, char *to_find)
 	int res;
 
 	res = 1;
-	while (*pos != '\0' || *to_find != '\0')
+	while (*pos != '\0' && *to_find != '\0')
 	{
 		if (*pos == *to_find)
 		{
@@ -46,5 +46,6 @@ char	*ft_strstr(char *str, char *to_find)
 		else
 			pos++;
 	}
-	return (pos);
+
+	return (0);
 }

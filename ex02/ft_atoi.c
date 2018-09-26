@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 19:36:02 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 17:57:29 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 21:34:20 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_atoi(char *str)
 
 	ans = 0;
 	sign = 1;
+	str = counter(str);
 	if (*str == '+')
 		str++;
 	else if (*str == '-')
