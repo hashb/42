@@ -6,11 +6,12 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 16:45:43 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 20:34:57 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 20:36:35 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
+void	ft_putnbr(int nb);
 
 void	ft_putnbr_spl(int nb)
 {

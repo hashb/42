@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:03:59 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:47:42 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 20:37:55 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	unsigned int i;
 
 	i = 0;
-	while (i < n || src[i] != '\0')
+	while (i < n && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
