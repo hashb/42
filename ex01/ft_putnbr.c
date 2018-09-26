@@ -6,35 +6,20 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 16:45:43 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 20:45:30 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 20:53:35 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
-void	ft_putnbr(int nb);
 
-void	ft_putnbr_spl(int nb)
+void	ft_putnbr(int nb)
 {
-	if (nb < 0)
+	if (nb == -__INT_MAX__)
 	{
 		ft_putchar('-');
 		ft_putchar('2');
 		ft_putnbr(147483648);
 		return ;
-	}
-	else
-	{
-		ft_putchar('2');
-		ft_putnbr(147483647);
-		return ;
-	}
-}
-
-void	ft_putnbr(int nb)
-{
-	if (nb == -__INT_MAX__ || nb == __INT_MAX__)
-	{
-		ft_putnbr_spl(nb);
 	}
 	if (nb < 0)
 	{
