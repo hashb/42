@@ -6,7 +6,20 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:33 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:05:29 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 22:33:11 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*ft_strupcase(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		i++;
+	}
+	return (str);
+}
