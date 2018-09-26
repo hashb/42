@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:20 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 20:41:13 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 21:55:33 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int		ft_strncmp(char *s1, char *s2, unsigned int n)
 			return (1);
 		else
 			return (-1);
+		i++;
 	}
 	return (0);
 }

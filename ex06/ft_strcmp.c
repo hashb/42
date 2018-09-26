@@ -6,20 +6,22 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:14 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 20:40:14 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 22:05:16 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strcmp(char *s1, char *s2)
 {
-	while (*s1 != '\0' && *s2 != '\0')
+	int i;
+
+	i = 0;
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		if (*s1 == *s2)
+		if (s1[i] == s2[i])
 		{
-			s1++;
-			s2++;
+			i++;
 		}
-		else if (*s1 > *s2)
+		else if (s1[i] > s2[i])
 			return (1);
 		else
 			return (-1);

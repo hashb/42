@@ -6,18 +6,20 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 15:22:52 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:36:23 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 21:40:03 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	while (*src != '\0')
+	int i;
+
+	i = 0;
+	while (src[i] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[i];
+		i++;
 	}
-	*dest = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
