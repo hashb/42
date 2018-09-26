@@ -6,7 +6,25 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:56 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:05:29 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 23:36:06 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*ft_strcat(char *dest, char *src)
+{
+	int i;
+	int j;
+
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
+		i++;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}

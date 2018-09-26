@@ -6,7 +6,21 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:40 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 18:05:29 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 23:01:47 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int		ft_str_is_alpha(char *str)
+{
+	if (*str == '\0')
+		return (1);
+	while (*str != '\0')
+	{
+		if ((*str >= 'A' && *str <= 'Z')
+			|| (*str >= 'a' && *str <= 'z'))
+			str++;
+		else
+			return (0);
+	}
+	return (1);
+}
