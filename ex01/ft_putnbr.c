@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 16:45:43 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 15:03:45 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 18:02:00 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 	else
-		ft_putchar(nb + 48);
+		ft_putchar(nb + '0');
 }
