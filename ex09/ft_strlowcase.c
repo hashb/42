@@ -6,11 +6,11 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 18:04:33 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/25 22:33:11 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/25 22:38:32 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int i;
 
