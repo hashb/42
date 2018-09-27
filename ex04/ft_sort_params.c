@@ -6,29 +6,22 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/26 19:26:48 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/26 20:23:07 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/26 20:35:04 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 void	ft_putchar(char c);
 
 int		ft_strcmp(char *s1, char *s2)
 {
-	int i;
-
-	i = 0;
-	if (s1[0] > s2[0])
-		return (s1[0] - s2[0]);
-	else if (s1[0] < s2[0])
-		return (s1[0] - s2[0]);
-	while (s1[i] != '\0' && s2[i] != '\0')
+	while (*s1 && (*s1 == *s2))
 	{
-		if (s1[i] == s2[i])
-			i++;
-		else
-			return (s1[i] - s2[i]);
+		s1++;
+		s2++;
 	}
-	return (0);
+	return *s1 - *s2;
 }
 
 void	ft_print_param(int argc, char *arr[])
@@ -77,9 +70,6 @@ void	ft_sort_params(int argc, char *arr[])
 
 int		main(int argc, char *argv[])
 {
-	int i;
-	char *tmp;
-
 	if (argc > 1)
 	{
 		ft_sort_params(argc, argv);
