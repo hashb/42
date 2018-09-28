@@ -6,12 +6,11 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/26 20:53:25 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/27 15:02:18 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/27 16:48:32 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 int		ft_ultimate_range(int **range, int min, int max)
 {
