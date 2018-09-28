@@ -6,12 +6,11 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/26 20:53:23 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/27 16:01:52 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/27 16:48:27 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 int		ft_strlen(char *str)
 {
