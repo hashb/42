@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/30 12:02:48 by kchenna           #+#    #+#             */
-/*   Updated: 2018/09/30 15:26:03 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/30 15:27:48 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@ int		match(char *s1, char *s2)
 	if (*s1 != '\0' && *s2 == '*')
 		return (match(s1 + 1, s2) || match(s1, s2 + 1));
 	if (*s1 == '\0' && *s2 == '*')
-		return match(s1, s2 + 1);
+		return (match(s1, s2 + 1));
 	if (*s1 == '\0' && *s2 == '\0')
 		return (1);
 	if (*s1 == *s2)
-		return match(s1 + 1, s2 + 1);
+		return (match(s1 + 1, s2 + 1));
 	return (0);
 }
