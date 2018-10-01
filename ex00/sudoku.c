@@ -6,7 +6,7 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/29 11:05:26 by smoissel          #+#    #+#             */
-/*   Updated: 2018/09/30 19:48:16 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/30 19:54:30 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int						ft_read_sudoku(int sudoku_grid[9][9], char **argv)
 		str = argv[i];
 		while (*str)
 		{
-			if (*str <= '1' && *str >= '9' && *str != '.')
+			if ((*str < '1' || *str > '9') && *str != '.')
 				return (0);
 			if (*str == '.')
 				sudoku_grid[i - 1][j] = 0;
