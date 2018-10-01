@@ -6,13 +6,13 @@
 /*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/29 11:05:26 by smoissel          #+#    #+#             */
-/*   Updated: 2018/09/30 16:17:57 by kchenna          ###   ########.fr       */
+/*   Updated: 2018/09/30 19:48:16 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "sudoku.h"
 
-void					ft_read_sudoku(int sudoku_grid[9][9], char **argv)
+int						ft_read_sudoku(int sudoku_grid[9][9], char **argv)
 {
 	int					i;
 	int					j;
@@ -25,6 +25,8 @@ void					ft_read_sudoku(int sudoku_grid[9][9], char **argv)
 		str = argv[i];
 		while (*str)
 		{
+			if (*str <= '1' && *str >= '9' && *str != '.')
+				return (0);
 			if (*str == '.')
 				sudoku_grid[i - 1][j] = 0;
 			else
@@ -34,6 +36,7 @@ void					ft_read_sudoku(int sudoku_grid[9][9], char **argv)
 		}
 		i++;
 	}
+	return (1);
 }
 
 void					ft_print_line(int *line)
@@ -97,8 +100,8 @@ int						main(int argc, char **argv)
 		ft_putstr("Error\n");
 		return (1);
 	}
-	ft_read_sudoku(sudoku_grid, argv);
-	if (!ft_is_all_valid(sudoku_grid))
+	if (!ft_read_sudoku(sudoku_grid, argv)
+		|| !ft_is_all_valid(sudoku_grid))
 	{
 		ft_putstr("Error\n");
 		return (1);
