@@ -6,7 +6,7 @@
 #    By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/02 18:03:23 by kchenna           #+#    #+#              #
-#    Updated: 2018/10/02 21:58:56 by kchenna          ###   ########.fr        #
+#    Updated: 2018/10/02 22:02:52 by kchenna          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,24 +29,10 @@ OUT = ft_putchar.o \
 
 all: $(NAME)
 
-$(NAME): $(OUT)
+$(NAME):
+	$(CC) $(CFLAGS) -c $(SRCS) -I $(INCLUDES)
 	ar rc $(NAME) $(OUT)
 	ranlib $(NAME)
-
-ft_putchar.o: $(SRC_DIR)/ft_putchar.c $(INCLUDES)/ft_putchar.h
-	$(CC) $(CFLAGS) -c $(SRC_DIR)/ft_putchar.c -I $(INCLUDES)
-
-ft_putstr.o: $(SRC_DIR)/ft_putstr.c $(INCLUDES)/ft_putstr.h
-	$(CC) $(CFLAGS) -c $(SRC_DIR)/ft_putstr.c -I $(INCLUDES)
-
-ft_strcmp.o: $(SRC_DIR)/ft_strcmp.c
-	$(CC) $(CFLAGS) -c $(SRC_DIR)/ft_strcmp.c -I $(INCLUDES)
-
-ft_strlen.o: $(SRC_DIR)/ft_strlen.c
-	$(CC) $(CFLAGS) -c $(SRC_DIR)/ft_strlen.c -I $(INCLUDES)
-
-ft_swap.o: $(SRC_DIR)/ft_swap.c
-	$(CC) $(CFLAGS) -c $(SRC_DIR)/ft_swap.c -I $(INCLUDES)
 
 clean:
 	/bin/rm -f $(OUT)
