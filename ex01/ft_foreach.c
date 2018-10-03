@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hashb <hashb@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/10/02 20:26:13 by hashb             #+#    #+#             */
-/*   Updated: 2018/10/02 20:48:05 by hashb            ###   ########.fr       */
+/*   Created: 2018/10/02 20:26:13 by kchenna           #+#    #+#             */
+/*   Updated: 2018/10/02 21:14:09 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_foreach(int *tab, int length, void (*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int i;
 

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hashb <hashb@student.42.fr>                +#+  +:+       +#+         #
+#    By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/02 18:03:23 by kchenna           #+#    #+#              #
-#    Updated: 2018/10/02 20:25:29 by hashb            ###   ########.fr        #
+#    Updated: 2018/10/02 21:10:08 by kchenna          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,9 +21,9 @@ SRCS = $(SRC_DIR)/ft_putchar.c \
 		$(SRC_DIR)/ft_swap.c
 
 OUT = $(OBJS)/ft_putchar.o \
-		$(OBJS)/ft_putstr.o \ 
+		$(OBJS)/ft_putstr.o \
 		$(OBJS)/ft_strcmp.o \
-		$(OBJS)/ft_strlen.o \ 
+		$(OBJS)/ft_strlen.o \
 		$(OBJS)/ft_swap.o
 
 all: $(NAME)
@@ -37,7 +37,7 @@ $(NAME):
 clean:
 	/bin/rm -f $(OUT)
 
-fclean: 
+fclean:
 	clean
 	/bin/rm -f $(NAME)
 

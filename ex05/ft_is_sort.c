@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hashb <hashb@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/10/02 20:45:36 by hashb             #+#    #+#             */
-/*   Updated: 2018/10/02 20:52:33 by hashb            ###   ########.fr       */
+/*   Created: 2018/10/02 20:45:36 by kchenna           #+#    #+#             */
+/*   Updated: 2018/10/02 21:10:48 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_is_sort(int *tab, int length, int (*f)(int, int))
+int		ft_is_sort(int *tab, int length, int (*f)(int, int))
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (i < length - 1)
-    {
-        if ((*f)(tab[i], tab[i + 1]) > 0)
-            return (0);
-        i++;
-    }
-    return (1);
+	i = 0;
+	while (i < length - 1)
+	{
+		if ((*f)(tab[i], tab[i + 1]) > 0)
+			return (0);
+		i++;
+	}
+	return (1);
 }
