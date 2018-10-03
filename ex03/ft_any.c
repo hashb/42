@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_any.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hashb <hashb@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kchenna <kchenna@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/10/02 20:34:13 by hashb             #+#    #+#             */
-/*   Updated: 2018/10/02 20:49:10 by hashb            ###   ########.fr       */
+/*   Created: 2018/10/02 20:34:13 by kchenna           #+#    #+#             */
+/*   Updated: 2018/10/02 21:10:34 by kchenna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_any(char **tab, int (*f)(char *))
+int		ft_any(char **tab, int (*f)(char *))
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (tab[i])
-    {
-        if ((*f)(tab[i]))
-            return (1);
-        i++;
-    }
-    return (0);
+	i = 0;
+	while (tab[i])
+	{
+		if ((*f)(tab[i]))
+			return (1);
+		i++;
+	}
+	return (0);
 }
