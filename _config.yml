@@ -1,6 +1,6 @@
 # general configuration
 url: https://blog.chenna.me/42
-baseurl: ''
+baseurl: '/42'
 
 # compass configuration
 compass:
