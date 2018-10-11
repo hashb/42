@@ -5,7 +5,7 @@ baseurl: '/42'
 # compass configuration
 compass:
   # an avatar or logo (optional)
-  logo: "/images/compass.ico"
+  logo: "/images/compass.svg"
   # author will appear under the avatar (optional)
   author: "Chenna Kautilya"
   # tagline will appear under the title (optional)
