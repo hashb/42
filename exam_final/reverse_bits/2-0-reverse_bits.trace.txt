@@ -1,0 +1,67 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p40.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Oct 12 10:42:44 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam-final/exam_20181012/kchenna
+
+= Git history ==================================================================
+$> git -C /var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmpDVUGag/user log --pretty='%H - %an, %ad : %s'
+208927394bde9fe17ac57476715141c360163d80 - Exam 42, Fri Oct 12 10:42:31 2018 -0700 : reverse_bits
+731e22f9f476e9a27dc00f18ce0a10f98e67bf3c - Exam 42, Fri Oct 12 10:37:09 2018 -0700 : ulstr
+963a849d9298364542333301db0f752ecde00055 - Exam 42, Fri Oct 12 10:27:58 2018 -0700 : rot_13
+f24385faca4b39396d9397e28e75b1af6359d26b - Exam 42, Fri Oct 12 10:15:00 2018 -0700 : aff_last_param.c
+7533b5d5b86ce4282ea0bdb4438a5cd6539fcce8 - Exam 42, Fri Oct 12 10:14:25 2018 -0700 : aff_last_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmpDVUGag/user
+total 16
+-rw-r--r--  1 deepthought  deepthought    47 Oct 12 10:42 .gitignore
+-rw-r--r--  1 deepthought  deepthought  1228 Oct 12 10:42 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 10:42 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 10:42 reverse_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 10:42 rot_13
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 10:42 ulstr
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmpDVUGag/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  362 Oct 12 10:42 aff_last_param.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmpDVUGag/user/reverse_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  198 Oct 12 10:42 reverse_bits.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmpDVUGag/user/rot_13:
+total 8
+-rw-r--r--  1 deepthought  deepthought  668 Oct 12 10:42 rot_13.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmpDVUGag/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  630 Oct 12 10:42 ulstr.c
+ 
+= reverse_bits =================================================================
+$> gcc -Wextra -Wall -Werror main.c reverse_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./7ctau24ivknbzust4gicn6rq
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

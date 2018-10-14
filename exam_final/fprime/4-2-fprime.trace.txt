@@ -1,0 +1,81 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r12p10.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Oct 12 12:16:28 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam-final/exam_20181012/kchenna
+
+= Git history ==================================================================
+$> git -C /var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user log --pretty='%H - %an, %ad : %s'
+e9f104d5b2c6afabff9abe23ab582cdbb7d6c525 - Exam 42, Fri Oct 12 11:53:17 2018 -0700 : foreach
+0389103c5d61d2621ae36c894425f8b8343c576a - Exam 42, Fri Oct 12 11:46:46 2018 -0700 : bfklds
+bde77ec3b52783843582e67f2559f56d766d44f2 - Exam 42, Fri Oct 12 11:44:31 2018 -0700 : ft_list_remove_if
+35485b43b7a59a28210e772d7fcedea8da32efcf - Exam 42, Fri Oct 12 11:15:41 2018 -0700 : print_hex
+208927394bde9fe17ac57476715141c360163d80 - Exam 42, Fri Oct 12 10:42:31 2018 -0700 : reverse_bits
+731e22f9f476e9a27dc00f18ce0a10f98e67bf3c - Exam 42, Fri Oct 12 10:37:09 2018 -0700 : ulstr
+963a849d9298364542333301db0f752ecde00055 - Exam 42, Fri Oct 12 10:27:58 2018 -0700 : rot_13
+f24385faca4b39396d9397e28e75b1af6359d26b - Exam 42, Fri Oct 12 10:15:00 2018 -0700 : aff_last_param.c
+7533b5d5b86ce4282ea0bdb4438a5cd6539fcce8 - Exam 42, Fri Oct 12 10:14:25 2018 -0700 : aff_last_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user
+total 16
+-rw-r--r--  1 deepthought  deepthought    77 Oct 12 12:16 .gitignore
+-rw-r--r--  1 deepthought  deepthought  2302 Oct 12 12:16 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 12:16 aff_last_param
+drwxr-xr-x  4 deepthought  deepthought   136 Oct 12 12:16 ft_list_foreach
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 12:16 ft_list_remove_if
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 12:16 print_hex
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 12:16 reverse_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 12:16 rot_13
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 12 12:16 ulstr
+
+/var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  362 Oct 12 12:16 aff_last_param.c
+
+/var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user/ft_list_foreach:
+total 16
+-rw-r--r--  1 deepthought  deepthought  234 Oct 12 12:16 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  207 Oct 12 12:16 ft_list_foreach.c
+
+/var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user/ft_list_remove_if:
+total 8
+-rw-r--r--  1 deepthought  deepthought  583 Oct 12 12:16 ft_list_remove_if.c
+
+/var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user/print_hex:
+total 8
+-rw-r--r--  1 deepthought  deepthought  817 Oct 12 12:16 print_hex.c
+
+/var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user/reverse_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  198 Oct 12 12:16 reverse_bits.c
+
+/var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user/rot_13:
+total 8
+-rw-r--r--  1 deepthought  deepthought  668 Oct 12 12:16 rot_13.c
+
+/var/folders/wv/6tgykv611w502s1158h1g8nw0000gp/T/tmpDHAHhw/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  630 Oct 12 12:16 ulstr.c
+ 
+= fprime =======================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

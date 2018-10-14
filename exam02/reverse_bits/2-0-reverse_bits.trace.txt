@@ -1,0 +1,59 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r7p4.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Oct  5 18:42:56 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam02/exam_20181006/kchenna
+
+= Git history ==================================================================
+$> git -C /var/folders/nw/zwz8l8593xl58l7tt_91ww8h0000gp/T/tmpzVIHLv/user log --pretty='%H - %an, %ad : %s'
+28b8f9922119eb0cb127f069ddc3e0a5e0451f3f - Exam 42, Fri Oct 5 18:42:45 2018 -0700 : reverse_bits
+4a5eacc068cc35a7ce25d14e49cf00e483521990 - Exam 42, Fri Oct 5 18:27:55 2018 -0700 : rot_13
+1196b668538eb4decba84e4f778a8f853879aeb6 - Exam 42, Fri Oct 5 18:13:12 2018 -0700 : maff_alpha
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nw/zwz8l8593xl58l7tt_91ww8h0000gp/T/tmpzVIHLv/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  721 Oct  5 18:42 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Oct  5 18:42 maff_alpha
+drwxr-xr-x  3 deepthought  deepthought  102 Oct  5 18:42 reverse_bits
+drwxr-xr-x  3 deepthought  deepthought  102 Oct  5 18:42 rot_13
+
+/var/folders/nw/zwz8l8593xl58l7tt_91ww8h0000gp/T/tmpzVIHLv/user/maff_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1180 Oct  5 18:42 maff_alpha.c
+
+/var/folders/nw/zwz8l8593xl58l7tt_91ww8h0000gp/T/tmpzVIHLv/user/reverse_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1088 Oct  5 18:42 reverse_bits.c
+
+/var/folders/nw/zwz8l8593xl58l7tt_91ww8h0000gp/T/tmpzVIHLv/user/rot_13:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1351 Oct  5 18:42 rot_13.c
+ 
+= reverse_bits =================================================================
+$> gcc -Wextra -Wall -Werror main.c reverse_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./lvrritt4y4e02s7ej22uhjir
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

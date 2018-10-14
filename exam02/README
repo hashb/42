@@ -1,0 +1,29 @@
+Hello kchenna,
+
+Your exam session for the project "Exam02" has just been marked as 
+finished by the exam system.
+The assignment subjects, grading traces, and the contents of your 
+turn-in repository are attached to this email.
+
+
+Start time: 06/10/2018 01:02:43 UTC
+End time: 06/10/2018 02:40:36 UTC
+Mode: real
+Final grade: 54/100
+
+Assignments:
+  Level 4:
+    1: fprime for 11 potential points (Current)
+    0: sort_list for 16 potential points (Failure)
+    2: rstr_capitalizer for 6 potential points (Success)
+    1: ft_range for 11 potential points (Failure)
+    0: str_capitalizer for 16 potential points (Failure)
+    0: reverse_bits for 16 potential points (Success)
+    0: rot_13 for 16 potential points (Success)
+    0: maff_alpha for 16 potential points (Success)
+
+
+
+Automated regards,
+
+42's exam system

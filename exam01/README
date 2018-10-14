@@ -1,0 +1,31 @@
+Hello kchenna,
+
+Your exam session for the project "Exam01" has just been marked as 
+finished by the exam system.
+The assignment subjects, grading traces, and the contents of your 
+turn-in repository are attached to this email.
+
+
+Start time: 29/09/2018 01:05:16 UTC
+End time: 29/09/2018 04:15:48 UTC
+Mode: real
+Final grade: 70/100
+
+Assignments:
+  Level 5:
+    2: ft_itoa_base for 10 potential points (Current)
+    1: print_memory for 15 potential points (Failure)
+    0: brainfuck for 20 potential points (Failure)
+    0: sort_int_tab for 16 potential points (Success)
+    0: tab_mult for 16 potential points (Success)
+    0: do_op for 16 potential points (Success)
+    2: repeat_alpha for 6 potential points (Success)
+    1: rot_13 for 11 potential points (Failure)
+    0: rev_print for 16 potential points (Failure)
+    0: aff_last_param for 16 potential points (Success)
+
+
+
+Automated regards,
+
+42's exam system

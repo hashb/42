@@ -1,0 +1,99 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r3p27.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Sep 28 19:02:30 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam01/exam_20180929/kchenna
+
+= Git history ==================================================================
+$> git -C /var/folders/xw/yhkxq3150057hxvh1_jp0lt80000gp/T/tmpHClLAs/user log --pretty='%H - %an, %ad : %s'
+7ce6e519357ba69bf77effff58cd687a2f6b45c8 - Exam 42, Fri Sep 28 19:02:18 2018 -0700 : fuck this shit
+bd19dc6a8c4f2cb9cde7360df2b923a18e40f730 - Exam 42, Fri Sep 28 18:32:26 2018 -0700 : level 1 completed
+ffbafd7a76a4829a31afbd0ac891c4cf015e7386 - Exam 42, Fri Sep 28 18:20:39 2018 -0700 : level 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/xw/yhkxq3150057hxvh1_jp0lt80000gp/T/tmpHClLAs/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  770 Sep 28 19:02 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Sep 28 19:02 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought  102 Sep 28 19:02 rev_print
+drwxr-xr-x  3 deepthought  deepthought  102 Sep 28 19:02 rot_13
+
+/var/folders/xw/yhkxq3150057hxvh1_jp0lt80000gp/T/tmpHClLAs/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1171 Sep 28 19:02 aff_last_param.c
+
+/var/folders/xw/yhkxq3150057hxvh1_jp0lt80000gp/T/tmpHClLAs/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1308 Sep 28 19:02 rev_print.c
+
+/var/folders/xw/yhkxq3150057hxvh1_jp0lt80000gp/T/tmpHClLAs/user/rot_13:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1400 Sep 28 19:02 rot_13.c
+ 
+= rot_13 =======================================================================
+$> gcc -Wextra -Wall -Werror rot_13.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./pebqy20vq0pa4ap121tl4n8h 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./liampog6jrg1jo6lwopt2sr2 "Y8SN2"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./xuti9li0a7elq73350xjfkjt "rhO4HwxZjuyvqC"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./gkmid0e99glwntolwghe8k96 "9dfqQew0hSpXDOB6"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./7iulldb6au1gl1aru6pgwu08 "W10jIa5C3XnF BfMgCZWI V9gaetAM08pkYsPB 6XaBZNr9nv8zoI V1Cjs0UYpmG7NygF w1FC7nQMActzpGVsY eHh 5k4e6BH80 DlLHgZSfity1 unOeBY ylhi"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./h0o1pr5toatfrlzfeppbsv4p "67jwTApoNW 4NmQRukgtX gBJiHts28 4DE8yA RdDm tuD Eh8ebk9QwSxmKNyl F1dtrQTVNIWEBGOX QaWqIso2 rWF745dflhHsZcJ nNgFMxwLS7 fyYcwNr1DSzm OaigRLTz46 k85wj Iyuarg7mzeCQNE"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./2kdou2oig48wr48dxolht4qs "78nDuRSEobpCwms UQDTSEILZOi42Kv u1ayxC eXk3w7Hgqs JA0GmhIFlbfz"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./ptzmpdmdg1uy9ipy48pot135 "SC2czNaGtoks" "vAaKF90nqQR" "HhYKd70VGruovnCk" "5JdYIM0nzikr" "3yH6peGnXo9Nq" "0CelREp2vq" "1QHTJvg" "znaJt7x" "Tpdc" "u7KPX" "Nt8D1UkTVo4yIRZQ" "WEp" "lmh7" "34rse6MOB" "JZDnCS3f"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+--- user_output_test8	2018-09-28 19:02:34.000000000 -0700$
++++ test8.output	2018-09-28 19:02:34.000000000 -0700$
+@@ -1 +1 @@$
+-FP2pmAnTgbxf$
++$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

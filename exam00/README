@@ -1,0 +1,28 @@
+Hello kchenna,
+
+Your exam session for the project "Exam00" has just been marked as 
+finished by the exam system.
+The assignment subjects, grading traces, and the contents of your 
+turn-in repository are attached to this email.
+
+
+Start time: 22/09/2018 01:03:25 UTC
+End time: 22/09/2018 02:13:54 UTC
+Mode: real
+Final grade: 55/100
+
+Assignments:
+  Level 3:
+    2: ft_strcpy for 10 potential points (Current)
+    1: ft_strcmp for 15 potential points (Failure)
+    0: ft_strrev for 20 potential points (Failure)
+    0: maff_revalpha for 20 potential points (Success)
+    0: ft_print_numbers for 20 potential points (Success)
+    1: only_a for 15 potential points (Success)
+    0: only_z for 20 potential points (Failure)
+
+
+
+Automated regards,
+
+42's exam system
